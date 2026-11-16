@@ -1,0 +1,13 @@
+Lab network snapshot, 16 November 2026, after `docker compose up`.
+
+Docker network: 2-cups-printer_default (172.26.0.0/16)
+Addresses are assigned by Docker and can change if the containers are recreated.
+The attacker address advertised in discovery packets must be reachable from the victim.
+
+Role            Service     Address                         Software
+Victim          cups        172.26.0.4, UDP/TCP 631         vulhub/cups-browsed:2.0.1
+Virtual printer printer     172.26.0.2, TCP 631             ippserver, queue /printers/lab
+Attacker        attacker    172.26.0.3                      Kali, Python, Scapy 2.8.0, tcpdump, tshark
+
+Host publishing: 127.0.0.1:631 only (TCP and UDP). CUPS web UI: http://127.0.0.1:631
+The printer advertises to cups:631 every 30s. Observed victim queue: Lab_Printer_172_26_0_2.

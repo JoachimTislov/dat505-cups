@@ -1,0 +1,74 @@
+Mitigation: cups-browsed printer allowlisting (BrowseAllow)
+============================================================
+
+Victim: cups container (vulhub/cups-browsed:2.0.1), 172.26.0.4
+Benign printer: ippserver container, 172.26.0.2
+Attacker: attacker container, 172.26.0.3
+
+Applied configuration
+---------------------
+Appended to /etc/cups/cups-browsed.conf inside the victim container, then
+`docker compose restart cups`:
+
+    BrowseAllow 172.26.0.2
+
+The single BrowseAllow line with no BrowseOrder line puts cups-browsed into
+default-deny mode: only printers advertised by 172.26.0.2 (the lab printer)
+are accepted.
+
+Note on directive semantics (found during testing): an initial attempt used
+`BrowseOrder deny,allow` + `BrowseAllow 172.26.0.2`, which did NOT mitigate
+- `deny,allow` is default-allow (deny list applied first, then allow list
+re-includes). The attack still produced a callback. Only the allowlist
+without BrowseOrder, or `BrowseOrder allow,deny`, gives default-deny.
+
+Also observed: BrowseAllow matches the printer's advertised Host property
+(the URI host from the browse record), not the datagram's IP source. The
+victim log shows "Matching printer "Evil_printer_172_26_0_3" with properties
+Host = "172.26.0.3"" - so an allowlisted host that advertises a third-party
+URI in its record would still pass a source-based allowlist expectation.
+
+Before mitigation (see pcap_files/attack-baseline.pcap)
+-------------------------------------------------------
+    browse packet received from 172.26.0.3
+    CUPS browsing: Remote host: 172.26.0.3; Port: 12345; Remote queue name:
+    EvilBaseline; ...
+    All BrowseFilter lines matched or skipped, accepting printer
+    Evil_printer_172_26_0_3
+
+Victim called back twice to 172.26.0.3:12345 with full TCP handshakes and
+IPP Get-Printer-Attributes requests. Detector output
+(evidence/alerts-attack-baseline.json): 3 alerts - 1 unauthorized-advertisement
++ 2 ipp-callback.
+
+After mitigation (see pcap_files/attack-after-mitigation.pcap)
+--------------------------------------------------------------
+Identical attack datagram (queue name EvilPostMitig):
+
+    browse packet from 172.26.0.3 disallowed
+
+No queue was created, no callback was observed within the 12 s sniff window
+(the capture contains only the attack datagram itself). Detector output
+(evidence/alerts-after-mitigation.json): 1 alert - unauthorized-advertisement.
+Detection still works; the mitigation stops the attack from acting.
+
+Benign printer after mitigation
+-------------------------------
+The lab printer's advertisements from 172.26.0.2 are still accepted and its
+queue Lab_Printer_172_26_0_2 is recreated normally after the restart
+("All BrowseFilter lines matched or skipped, accepting printer
+Lab_Printer_172_26_0_2").
+
+Other measures considered (Task 5)
+----------------------------------
+- Restricting UDP/631: the lab already publishes the victim only on host
+  loopback (docker-compose.yml maps 127.0.0.1:631). A host/edge firewall
+  rule allowing UDP/631 only from known print servers is the network-level
+  equivalent of the allowlist applied here.
+- Disabling cups-browsed functionality: `BrowseRemoteProtocols none` (or
+  removing cups-browsed where legacy browse discovery is not needed) stops
+  UDP/631 processing entirely; stronger than allowlisting but removes
+  legitimate discovery too.
+- Patches/segmentation: cups-browsed 2.0.1 is the last vulnerable release
+  line; current releases reworked the affected code. Printers should live on
+  a dedicated management VLAN so end-user hosts never see browse datagrams.

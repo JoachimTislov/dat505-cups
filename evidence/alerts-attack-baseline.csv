@@ -1,0 +1,4 @@
+time,rule,src,dst,summary,detail
+2026-11-16T21:05:10.690347+00:00,unauthorized-advertisement,172.26.0.3,172.26.0.4,Ether / IP / UDP 172.26.0.3:ipp > 172.26.0.4:ipp / Raw,browse record for http://172.26.0.3:12345/printers/EvilBaseline from non-allowlisted 172.26.0.3
+2026-11-16T21:05:10.716908+00:00,ipp-callback,172.26.0.4,172.26.0.3,Ether / IP / TCP 172.26.0.4:39660 > 172.26.0.3:italk S,connection opened to advertised printer 172.26.0.3:12345
+2026-11-16T21:05:20.718253+00:00,ipp-callback,172.26.0.4,172.26.0.3,Ether / IP / TCP 172.26.0.4:46990 > 172.26.0.3:italk S,connection opened to advertised printer 172.26.0.3:12345

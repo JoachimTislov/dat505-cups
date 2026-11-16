@@ -1,0 +1,26 @@
+[
+  {
+    "time": "2026-11-15T22:01:38.690592+00:00",
+    "rule": "unauthorized-advertisement",
+    "src": "172.26.0.3",
+    "dst": "172.26.0.2",
+    "summary": "Ether / IP / UDP 172.26.0.3:50255 > 172.26.0.2:ipp / Raw",
+    "detail": "browse record for http://172.26.0.3:12345/printers/NAME from non-allowlisted 172.26.0.3"
+  },
+  {
+    "time": "2026-11-15T22:01:44.445525+00:00",
+    "rule": "ipp-callback",
+    "src": "172.26.0.2",
+    "dst": "172.26.0.3",
+    "summary": "Ether / IP / TCP 172.26.0.2:48714 > 172.26.0.3:italk S",
+    "detail": "connection opened to advertised printer 172.26.0.3:12345"
+  },
+  {
+    "time": "2026-11-15T22:01:44.448805+00:00",
+    "rule": "ipp-callback",
+    "src": "172.26.0.2",
+    "dst": "172.26.0.3",
+    "summary": "Ether / IP / TCP 172.26.0.2:48720 > 172.26.0.3:italk S",
+    "detail": "connection opened to advertised printer 172.26.0.3:12345"
+  }
+]

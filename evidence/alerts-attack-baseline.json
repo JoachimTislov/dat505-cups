@@ -1,0 +1,26 @@
+[
+  {
+    "time": "2026-11-16T21:05:10.690347+00:00",
+    "rule": "unauthorized-advertisement",
+    "src": "172.26.0.3",
+    "dst": "172.26.0.4",
+    "summary": "Ether / IP / UDP 172.26.0.3:ipp > 172.26.0.4:ipp / Raw",
+    "detail": "browse record for http://172.26.0.3:12345/printers/EvilBaseline from non-allowlisted 172.26.0.3"
+  },
+  {
+    "time": "2026-11-16T21:05:10.716908+00:00",
+    "rule": "ipp-callback",
+    "src": "172.26.0.4",
+    "dst": "172.26.0.3",
+    "summary": "Ether / IP / TCP 172.26.0.4:39660 > 172.26.0.3:italk S",
+    "detail": "connection opened to advertised printer 172.26.0.3:12345"
+  },
+  {
+    "time": "2026-11-16T21:05:20.718253+00:00",
+    "rule": "ipp-callback",
+    "src": "172.26.0.4",
+    "dst": "172.26.0.3",
+    "summary": "Ether / IP / TCP 172.26.0.4:46990 > 172.26.0.3:italk S",
+    "detail": "connection opened to advertised printer 172.26.0.3:12345"
+  }
+]

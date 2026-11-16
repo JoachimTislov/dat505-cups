@@ -1,0 +1,202 @@
+[
+  {
+    "time": "2026-11-16T21:07:59.790671+00:00",
+    "rule": "unauthorized-advertisement",
+    "src": "172.26.0.3",
+    "dst": "172.26.0.4",
+    "summary": "Ether / IP / UDP 172.26.0.3:ipp > 172.26.0.4:ipp / Raw",
+    "detail": "browse record for http://172.26.0.3:12345/printers/EvilFlood from non-allowlisted 172.26.0.3"
+  },
+  {
+    "time": "2026-11-16T21:08:00.078411+00:00",
+    "rule": "unauthorized-advertisement",
+    "src": "172.26.0.3",
+    "dst": "172.26.0.4",
+    "summary": "Ether / IP / UDP 172.26.0.3:ipp > 172.26.0.4:ipp / Raw",
+    "detail": "browse record for http://172.26.0.3:12345/printers/EvilFlood from non-allowlisted 172.26.0.3"
+  },
+  {
+    "time": "2026-11-16T21:08:00.345384+00:00",
+    "rule": "unauthorized-advertisement",
+    "src": "172.26.0.3",
+    "dst": "172.26.0.4",
+    "summary": "Ether / IP / UDP 172.26.0.3:ipp > 172.26.0.4:ipp / Raw",
+    "detail": "browse record for http://172.26.0.3:12345/printers/EvilFlood from non-allowlisted 172.26.0.3"
+  },
+  {
+    "time": "2026-11-16T21:08:00.615448+00:00",
+    "rule": "unauthorized-advertisement",
+    "src": "172.26.0.3",
+    "dst": "172.26.0.4",
+    "summary": "Ether / IP / UDP 172.26.0.3:ipp > 172.26.0.4:ipp / Raw",
+    "detail": "browse record for http://172.26.0.3:12345/printers/EvilFlood from non-allowlisted 172.26.0.3"
+  },
+  {
+    "time": "2026-11-16T21:08:00.881377+00:00",
+    "rule": "unauthorized-advertisement",
+    "src": "172.26.0.3",
+    "dst": "172.26.0.4",
+    "summary": "Ether / IP / UDP 172.26.0.3:ipp > 172.26.0.4:ipp / Raw",
+    "detail": "browse record for http://172.26.0.3:12345/printers/EvilFlood from non-allowlisted 172.26.0.3"
+  },
+  {
+    "time": "2026-11-16T21:08:01.149290+00:00",
+    "rule": "unauthorized-advertisement",
+    "src": "172.26.0.3",
+    "dst": "172.26.0.4",
+    "summary": "Ether / IP / UDP 172.26.0.3:ipp > 172.26.0.4:ipp / Raw",
+    "detail": "browse record for http://172.26.0.3:12345/printers/EvilFlood from non-allowlisted 172.26.0.3"
+  },
+  {
+    "time": "2026-11-16T21:08:01.149290+00:00",
+    "rule": "repeated-discovery",
+    "src": "172.26.0.3",
+    "dst": "172.26.0.4",
+    "summary": "Ether / IP / UDP 172.26.0.3:ipp > 172.26.0.4:ipp / Raw",
+    "detail": "6 advertisements from 172.26.0.3 in 60s (threshold 5)"
+  },
+  {
+    "time": "2026-11-16T21:08:01.413403+00:00",
+    "rule": "unauthorized-advertisement",
+    "src": "172.26.0.3",
+    "dst": "172.26.0.4",
+    "summary": "Ether / IP / UDP 172.26.0.3:ipp > 172.26.0.4:ipp / Raw",
+    "detail": "browse record for http://172.26.0.3:12345/printers/EvilFlood from non-allowlisted 172.26.0.3"
+  },
+  {
+    "time": "2026-11-16T21:08:01.678403+00:00",
+    "rule": "unauthorized-advertisement",
+    "src": "172.26.0.3",
+    "dst": "172.26.0.4",
+    "summary": "Ether / IP / UDP 172.26.0.3:ipp > 172.26.0.4:ipp / Raw",
+    "detail": "browse record for http://172.26.0.3:12345/printers/EvilFlood from non-allowlisted 172.26.0.3"
+  },
+  {
+    "time": "2026-11-16T21:08:01.944443+00:00",
+    "rule": "unauthorized-advertisement",
+    "src": "172.26.0.3",
+    "dst": "172.26.0.4",
+    "summary": "Ether / IP / UDP 172.26.0.3:ipp > 172.26.0.4:ipp / Raw",
+    "detail": "browse record for http://172.26.0.3:12345/printers/EvilFlood from non-allowlisted 172.26.0.3"
+  },
+  {
+    "time": "2026-11-16T21:08:02.212408+00:00",
+    "rule": "unauthorized-advertisement",
+    "src": "172.26.0.3",
+    "dst": "172.26.0.4",
+    "summary": "Ether / IP / UDP 172.26.0.3:ipp > 172.26.0.4:ipp / Raw",
+    "detail": "browse record for http://172.26.0.3:12345/printers/EvilFlood from non-allowlisted 172.26.0.3"
+  },
+  {
+    "time": "2026-11-16T21:08:02.479438+00:00",
+    "rule": "unauthorized-advertisement",
+    "src": "172.26.0.3",
+    "dst": "172.26.0.4",
+    "summary": "Ether / IP / UDP 172.26.0.3:ipp > 172.26.0.4:ipp / Raw",
+    "detail": "browse record for http://172.26.0.3:12345/printers/EvilFlood from non-allowlisted 172.26.0.3"
+  },
+  {
+    "time": "2026-11-16T21:08:02.751441+00:00",
+    "rule": "unauthorized-advertisement",
+    "src": "172.26.0.3",
+    "dst": "172.26.0.4",
+    "summary": "Ether / IP / UDP 172.26.0.3:ipp > 172.26.0.4:ipp / Raw",
+    "detail": "browse record for http://172.26.0.3:12345/printers/EvilFlood from non-allowlisted 172.26.0.3"
+  },
+  {
+    "time": "2026-11-16T21:07:59.819928+00:00",
+    "rule": "ipp-callback",
+    "src": "172.26.0.4",
+    "dst": "172.26.0.3",
+    "summary": "Ether / IP / TCP 172.26.0.4:34464 > 172.26.0.3:italk S",
+    "detail": "connection opened to advertised printer 172.26.0.3:12345"
+  },
+  {
+    "time": "2026-11-16T21:08:00.093049+00:00",
+    "rule": "ipp-callback",
+    "src": "172.26.0.4",
+    "dst": "172.26.0.3",
+    "summary": "Ether / IP / TCP 172.26.0.4:34476 > 172.26.0.3:italk S",
+    "detail": "connection opened to advertised printer 172.26.0.3:12345"
+  },
+  {
+    "time": "2026-11-16T21:08:00.358955+00:00",
+    "rule": "ipp-callback",
+    "src": "172.26.0.4",
+    "dst": "172.26.0.3",
+    "summary": "Ether / IP / TCP 172.26.0.4:34490 > 172.26.0.3:italk S",
+    "detail": "connection opened to advertised printer 172.26.0.3:12345"
+  },
+  {
+    "time": "2026-11-16T21:08:00.628997+00:00",
+    "rule": "ipp-callback",
+    "src": "172.26.0.4",
+    "dst": "172.26.0.3",
+    "summary": "Ether / IP / TCP 172.26.0.4:34504 > 172.26.0.3:italk S",
+    "detail": "connection opened to advertised printer 172.26.0.3:12345"
+  },
+  {
+    "time": "2026-11-16T21:08:00.892174+00:00",
+    "rule": "ipp-callback",
+    "src": "172.26.0.4",
+    "dst": "172.26.0.3",
+    "summary": "Ether / IP / TCP 172.26.0.4:34518 > 172.26.0.3:italk S",
+    "detail": "connection opened to advertised printer 172.26.0.3:12345"
+  },
+  {
+    "time": "2026-11-16T21:08:01.161877+00:00",
+    "rule": "ipp-callback",
+    "src": "172.26.0.4",
+    "dst": "172.26.0.3",
+    "summary": "Ether / IP / TCP 172.26.0.4:34528 > 172.26.0.3:italk S",
+    "detail": "connection opened to advertised printer 172.26.0.3:12345"
+  },
+  {
+    "time": "2026-11-16T21:08:01.425881+00:00",
+    "rule": "ipp-callback",
+    "src": "172.26.0.4",
+    "dst": "172.26.0.3",
+    "summary": "Ether / IP / TCP 172.26.0.4:34532 > 172.26.0.3:italk S",
+    "detail": "connection opened to advertised printer 172.26.0.3:12345"
+  },
+  {
+    "time": "2026-11-16T21:08:01.691976+00:00",
+    "rule": "ipp-callback",
+    "src": "172.26.0.4",
+    "dst": "172.26.0.3",
+    "summary": "Ether / IP / TCP 172.26.0.4:34540 > 172.26.0.3:italk S",
+    "detail": "connection opened to advertised printer 172.26.0.3:12345"
+  },
+  {
+    "time": "2026-11-16T21:08:01.958947+00:00",
+    "rule": "ipp-callback",
+    "src": "172.26.0.4",
+    "dst": "172.26.0.3",
+    "summary": "Ether / IP / TCP 172.26.0.4:34552 > 172.26.0.3:italk S",
+    "detail": "connection opened to advertised printer 172.26.0.3:12345"
+  },
+  {
+    "time": "2026-11-16T21:08:02.226905+00:00",
+    "rule": "ipp-callback",
+    "src": "172.26.0.4",
+    "dst": "172.26.0.3",
+    "summary": "Ether / IP / TCP 172.26.0.4:34554 > 172.26.0.3:italk S",
+    "detail": "connection opened to advertised printer 172.26.0.3:12345"
+  },
+  {
+    "time": "2026-11-16T21:08:02.497929+00:00",
+    "rule": "ipp-callback",
+    "src": "172.26.0.4",
+    "dst": "172.26.0.3",
+    "summary": "Ether / IP / TCP 172.26.0.4:34562 > 172.26.0.3:italk S",
+    "detail": "connection opened to advertised printer 172.26.0.3:12345"
+  },
+  {
+    "time": "2026-11-16T21:08:02.765947+00:00",
+    "rule": "ipp-callback",
+    "src": "172.26.0.4",
+    "dst": "172.26.0.3",
+    "summary": "Ether / IP / TCP 172.26.0.4:34578 > 172.26.0.3:italk S",
+    "detail": "connection opened to advertised printer 172.26.0.3:12345"
+  }
+]

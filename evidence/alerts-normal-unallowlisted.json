@@ -1,0 +1,26 @@
+[
+  {
+    "time": "2026-11-16T19:53:46.078688+00:00",
+    "rule": "unauthorized-advertisement",
+    "src": "172.26.0.2",
+    "dst": "172.26.0.4",
+    "summary": "Ether / IP / UDP 172.26.0.2:46457 > 172.26.0.4:ipp / Raw",
+    "detail": "browse record for http://172.26.0.2:631/printers/lab from non-allowlisted 172.26.0.2"
+  },
+  {
+    "time": "2026-11-16T19:53:46.080346+00:00",
+    "rule": "ipp-callback",
+    "src": "172.26.0.4",
+    "dst": "172.26.0.2",
+    "summary": "Ether / IP / TCP 172.26.0.4:33710 > 172.26.0.2:ipps S",
+    "detail": "connection opened to advertised printer 172.26.0.2:631"
+  },
+  {
+    "time": "2026-11-16T19:53:46.082701+00:00",
+    "rule": "ipp-callback",
+    "src": "172.26.0.4",
+    "dst": "172.26.0.2",
+    "summary": "Ether / IP / TCP 172.26.0.4:33716 > 172.26.0.2:ipps S",
+    "detail": "connection opened to advertised printer 172.26.0.2:631"
+  }
+]

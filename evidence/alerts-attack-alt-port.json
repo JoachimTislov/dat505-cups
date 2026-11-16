@@ -1,0 +1,26 @@
+[
+  {
+    "time": "2026-11-16T21:06:09.625347+00:00",
+    "rule": "unauthorized-advertisement",
+    "src": "172.26.0.3",
+    "dst": "172.26.0.4",
+    "summary": "Ether / IP / UDP 172.26.0.3:12346 > 172.26.0.4:ipp / Raw",
+    "detail": "browse record for http://172.26.0.3:12346/printers/EvilAltPort from non-allowlisted 172.26.0.3"
+  },
+  {
+    "time": "2026-11-16T21:06:09.654965+00:00",
+    "rule": "ipp-callback",
+    "src": "172.26.0.4",
+    "dst": "172.26.0.3",
+    "summary": "Ether / IP / TCP 172.26.0.4:40792 > 172.26.0.3:12346 S",
+    "detail": "connection opened to advertised printer 172.26.0.3:12346"
+  },
+  {
+    "time": "2026-11-16T21:06:19.656373+00:00",
+    "rule": "ipp-callback",
+    "src": "172.26.0.4",
+    "dst": "172.26.0.3",
+    "summary": "Ether / IP / TCP 172.26.0.4:38986 > 172.26.0.3:12346 S",
+    "detail": "connection opened to advertised printer 172.26.0.3:12346"
+  }
+]
